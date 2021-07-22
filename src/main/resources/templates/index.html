@@ -33,24 +33,15 @@
         <!-- Text input-->
 
         <div class="form-group">
-            <label class="col-md-4 control-label">Email</label>
+            <label class="col-md-4 control-label">Wage</label>
             <div class="col-md-4 inputGroupContainer">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-film"></i></span>
-                    <input name="email" id="email"  class="form-control"  type="email">
+                    <input name="wage" id="wage"  class="form-control"  type="wage">
                 </div>
             </div>
         </div>
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label">Address</label>
-            <div class="col-md-4 inputGroupContainer">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                    <input name="address" id="address" class="form-control"  type="text">
-                </div>
-            </div>
-        </div>
+
         <!-- Text input-->
         <div class="form-group">
 
@@ -76,8 +67,7 @@
         <tr class="row-name">
             <th>Id</th>
             <th>name</th>
-            <th>email</th>
-            <th>address</th>
+            <th>wage</th>
             <th>Action</th>
         </tr>
         </thead>
@@ -183,8 +173,7 @@
                 $(data).each(function (index, element){
                     tableProduct.append('<tr><td><button type="button" onclick="getId('+element.id+')" class="btn btn-primary">'+element.id+'</button></td>' +
                         '<td>'+element.name+'</td>' +
-                        '<td>'+element.email+'</td>' +
-                        '<td>'+element.address+'</td>' +
+                        '<td>'+element.wage+'</td>' +
                         '<td><button onclick="remove('+element.id+')" type="button" class="btn btn-danger">Delete</button></td></tr>')
                 });
             },
